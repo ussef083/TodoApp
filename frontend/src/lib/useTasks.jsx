@@ -14,9 +14,7 @@ const useTasks = () => {
             const res = await fetch(`${Domain}/tasks`)
             const data = await res.json()
             const dataArray = Object.values(data)
-    
-            console.log(dataArray)
-    
+      
             setInProgressTasks(
               dataArray
                 .filter(task => task.completed === false)
