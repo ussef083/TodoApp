@@ -1,4 +1,10 @@
 {
+  "main": "server.js",
+  "description": "This is a simple CRUD API for a TODO app",
+  "engines": {
+    "node": "14.x"
+  },
+  "version": "1.0.0",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
