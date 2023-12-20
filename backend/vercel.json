@@ -15,5 +15,10 @@
           "Access-Control-Allow-Headers": "X-Requested-With, Content-Type, Accept, Origin, Authorization"
         }
       }
+    ],
+    "rewrites": [
+      { "source": "/api/(.*)", "destination": "/api" }
     ]
   }
+
+  
