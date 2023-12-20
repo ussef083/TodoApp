@@ -1,0 +1,20 @@
+.task{
+    background: rgba(255, 255, 255, 0.01);
+    border-radius: 10px;
+    box-shadow: 0px 1px 40px 0px rgba(243, 188, 198, 0.20) inset, 0px 4px 18px 0px rgba(243, 188, 198, 0.25) inset, 50px 98px 100px -48px rgba(243, 188, 198, 0.25) inset, 0px -82px 68px -64px rgba(243, 188, 198, 0.25) inset, -82px 0px 68px -64px rgba(243, 188, 198, 0.25) inset, 0px 4px 4px 0px rgba(243, 188, 198, 0.25) inset, 0px 7px 11px -4px #F3BCC6 inset, 0px 39px 56px -36px rgba(173, 157, 160, 0.50) inset;
+    backdrop-filter: blur(50px);
+
+    padding: 20px;
+    max-width: 400px;
+    color: #FFE4F0B2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    .task__title{
+        margin: 0px;
+        text-decoration: line-through;
+        flex-grow: 1;
+    }
+
+}

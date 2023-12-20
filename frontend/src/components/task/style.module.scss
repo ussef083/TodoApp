@@ -1,0 +1,47 @@
+.task{
+    -webkit-backdrop-filter: blur(100px) brightness(100%);
+    backdrop-filter: blur(100px) brightness(100%);
+    background-color: #ffffff03;
+    border-radius: 10px;
+    box-shadow: inset 0px 1px 40px #447b8c33, inset 0px 4px 18px #447b8c40, inset 50px 98px 100px -48px #447b8c40,
+      inset 0px -82px 68px -64px #447b8c40, inset -82px 0px 68px -64px #447b8c40, inset 0px 4px 4px #00000040,
+      inset 0px 7px 11px -4px #7dddfb, inset 0px 39px 56px -36px #a9c5fd80;
+
+    padding: 20px;
+    max-width: 400px;
+    color: #C5EEFF;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    .task__title{
+        margin: 0px;
+    }
+    .wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 14px;
+        font-weight: 400;
+
+        .task__date{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            justify-content: space-between;
+
+            .calendar{
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .task .wrapper{
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+
+    }
+}

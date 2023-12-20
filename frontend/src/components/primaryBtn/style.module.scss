@@ -1,0 +1,27 @@
+.btn{
+    -webkit-backdrop-filter: blur(100px) brightness(100%);
+    backdrop-filter: blur(100px) brightness(100%);
+    background-color: #ffffff03;
+    border-radius: 5px;
+    box-shadow: inset 0px 1px 40px #a3e3ff33, inset 0px 4px 18px #ffffff40, inset 50px 98px 100px -48px #a3e3ff40,
+      inset 0px -82px 68px -64px #a3e3ff40, inset -82px 0px 68px -64px #a3e3ff40, inset 0px 4px 4px #a3e3ff40,
+      inset 0px 7px 11px -4px #a3e3ff, inset 0px 39px 56px -36px #a3e3ff80;
+      text-align: center;
+      padding: 10px 10px;
+      font-weight: 500;
+      font-size: 16px;
+      border: none;
+      color: #C5EEFF;
+      cursor: pointer;
+}
+.btn1{
+  @extend .btn;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 450px) {
+  .btn{
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
