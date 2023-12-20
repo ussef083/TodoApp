@@ -1,10 +1,10 @@
 const express = require('express');
 const app = express();
 const cors = require('cors');
-const getTaskrouter = require('../routes/getTaskes');
-const updateTaskrouter = require('../routes/updateTask');
-const createTaskrouter = require('../routes/createTask');
-const deleteTaskrouter = require('../routes/deleteTask');
+const getTaskrouter = require('./routes/getTaskes');
+const updateTaskrouter = require('./routes/updateTask');
+const createTaskrouter = require('./routes/createTask');
+const deleteTaskrouter = require('./routes/deleteTask');
 require('dotenv').config();
 
 
@@ -27,5 +27,4 @@ app.get('/', (req, res) => {
 });
 
 
-// app.listen(8001, () => console.log('Listening on port 8000...'));
-module.exports = app;
+app.listen(8001 || process.env.PORT, () => console.log('Listening on port 8000...'));

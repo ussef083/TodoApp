@@ -1,11 +1,11 @@
 {
-  "main": "server.js",
+  "main": "index.js",
   "description": "This is a simple CRUD API for a TODO app",
   "engines": {
     "node": "18.x"
   },
   "scripts": {
-    "start": "node ./api/index.js"
+    "start": "node index.js"
   },
   "version": "1.0.0",
   "dependencies": {
