@@ -22,5 +22,8 @@ app.use('/tasks', updateTaskrouter);
 app.use('/tasks', createTaskrouter);
 app.use('/deleteTasks', deleteTaskrouter);
 
+app.get('/', (req, res) => {    
+    res.send('Hello World!');
+});
 
 app.listen(8000, () => console.log('Listening on port 8000...'));
