@@ -10,7 +10,7 @@ require('dotenv').config();
 
 app.use(cors(
     {
-        origin: 'https://todo-app-by-youssef-wardi.vercel.app/',
+        origin: 'https://todo-app-by-youssef-wardi.vercel.app',
         credentials: true,
         methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     }
